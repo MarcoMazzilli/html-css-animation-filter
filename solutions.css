@@ -107,10 +107,6 @@ animation-timing-function: linear;
 
 /* ---ESERCIZIO 11--- */
 
-.ex-11-icon {
-  animation-duration: 3s;
-}
-
 .ex-11-icon:hover {
   animation-name: orario;
   animation-duration: 1s;
@@ -132,4 +128,42 @@ animation-timing-function: linear;
   }
 }
 /* ---ESERCIZIO 12--- */
+
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: start-to-end ;
+  animation-duration: 3s;
+  transition-timing-function: linear;
+}
+
+@keyframes start-to-end {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: 68%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: end-to-start ;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  transition-timing-function: linear;
+}
+
+@keyframes end-to-start {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: 68%;
+  }
+  100% {
+    right: 20%;
+  }
+}
+
 /* ---ESERCIZIO 13--- */
